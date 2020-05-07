@@ -97,7 +97,7 @@ void setup() {
   currentDay = now.day();
   Serial.print("Current day ");
   Serial.println(currentDay);
-  /*
+  
     Serial.print("Initializing SD card...");
     // make sure that the default chip select pin is set to
     // output, even if you don't use it:
@@ -144,7 +144,7 @@ void setup() {
     else {
     Serial.println("error opening datalog.txt");
     }
-  */
+ 
 
 }
 
@@ -230,7 +230,7 @@ void IsNewDay ()
     currentDay = now.day();
     Serial.print("new day ");
     Serial.println(currentDay, DEC);
-    /*
+    
       dataString = String(now.year(),DEC);
       dataString += ".";
       dataString += String(now.month(),DEC);
@@ -242,7 +242,7 @@ void IsNewDay ()
       myFile = SD.open("DAY.txt", FILE_WRITE);
       myFile.println(dataString);
       myFile.close();
-    */
+    
     liters = 0;
     posCounter = 0;
     Serial.println("New day!");
